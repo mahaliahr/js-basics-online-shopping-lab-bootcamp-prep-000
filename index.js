@@ -46,7 +46,7 @@ function removeFromCart(item) {
   var index = cart.findIndex(function (item){
     return cart.itemName === item
   })
-  return cart[index]
+  return cart//[index]
 
   //var removed = cart.splice(index, 1)
   //return removed
