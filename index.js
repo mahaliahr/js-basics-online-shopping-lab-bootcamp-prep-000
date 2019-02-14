@@ -50,9 +50,9 @@ function removeFromCart(item) {
 
   //var removed = cart.splice(index, 1)
   //return removed
-} else {
+/*} else {
   return 'That item is not in your cart.'
-}
+}*/
 }
 
 function placeOrder(cardNumber) {
