@@ -44,15 +44,17 @@ function removeFromCart(item) {
   } */
 
   var index = cart.findIndex(function (item){
-    return cart.itemName === item
+    if (cart.itemName === item) {
+    return cart[index]
+  } else {
+    return 'That item is not in your cart.'
+  }
   })
-  return cart//[index]
+  
 
   //var removed = cart.splice(index, 1)
   //return removed
-/*} else {
-  return 'That item is not in your cart.'
-}*/
+
 }
 
 function placeOrder(cardNumber) {
