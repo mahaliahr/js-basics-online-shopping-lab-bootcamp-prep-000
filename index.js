@@ -39,12 +39,15 @@ function total() {
   }
 
 function removeFromCart(item) {
-  function itemMatch(item) {
+  /* function itemMatch(item) {
     return item === item
-  }
-  if (itemMatch === true) {
-  var index = cart.findIndex(itemMatch)
-  return index
+  } */
+
+  var index = cart.findIndex(function (item){
+    return cart.itemName === item
+  })
+  return cart[index]
+
   //var removed = cart.splice(index, 1)
   //return removed
 } else {
